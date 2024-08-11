@@ -51,6 +51,9 @@ class WeatherViewController: UIViewController {
         }
         else{
             print("Empty fields not allowed")
+            let alert = UIAlertController(title: "Error", message: "Please type City name", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
         }
     }
 }
