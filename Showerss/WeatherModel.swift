@@ -12,11 +12,19 @@ struct WeatherResponse: Codable{
 }
 
 struct WeatherData: Codable {
-    let city_name: String
+    let cityName: String
     let temp: Double
     let weather: WeatherIcon
+    
+    private enum CodingKeys: String, CodingKey {
+        case cityName = "city_name"
+        case temp
+        case weather
+    }
 }
 
 struct WeatherIcon: Codable {
     let icon: String
+    let description: String
+    let code: Int
 }

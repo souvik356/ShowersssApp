@@ -25,16 +25,16 @@
                                     <constraint firstAttribute="height" constant="45" id="TSI-9Y-FRB"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="30"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vy4-ls-s99">
-                                <rect key="frame" x="16" y="468" width="361" height="50"/>
+                                <rect key="frame" x="16" y="693" width="361" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="hru-21-Ide"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="30"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gjR-gT-wa4">
@@ -72,33 +72,57 @@
                                 </constraints>
                                 <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </activityIndicatorView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zks-Ja-Ugk">
+                                <rect key="frame" x="76" y="309" width="240" height="234"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="Oou-29-HfG"/>
+                                    <constraint firstAttribute="height" constant="234" id="qcK-WY-drl"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fdh-5i-Hwc">
+                                <rect key="frame" x="16" y="593" width="361" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="XW0-uy-sHA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="30"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gjR-gT-wa4" secondAttribute="trailing" constant="16" id="2N6-6p-5ZH"/>
                             <constraint firstItem="JZd-PI-HIk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7UP-KS-M0S"/>
+                            <constraint firstItem="Fdh-5i-Hwc" firstAttribute="top" secondItem="zks-Ja-Ugk" secondAttribute="bottom" constant="50" id="AA0-7X-7Cc"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Vy4-ls-s99" secondAttribute="trailing" constant="16" id="GH8-7C-8iA"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Vy4-ls-s99" secondAttribute="bottom" constant="300" id="Joa-DH-03E"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Vy4-ls-s99" secondAttribute="bottom" constant="75" id="Joa-DH-03E"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cJV-q1-Qs6" secondAttribute="trailing" constant="16" id="Nfh-KR-Kda"/>
                             <constraint firstItem="dde-Ca-r5D" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="SWM-AX-dWv"/>
                             <constraint firstItem="gjR-gT-wa4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="T15-8s-Bf5"/>
                             <constraint firstItem="JZd-PI-HIk" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="UHT-7f-le6"/>
                             <constraint firstItem="cJV-q1-Qs6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="YYx-db-g8A"/>
                             <constraint firstItem="dde-Ca-r5D" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ZMs-Vu-oft"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Fdh-5i-Hwc" secondAttribute="trailing" constant="16" id="cKy-w5-Rqz"/>
                             <constraint firstAttribute="bottom" secondItem="dde-Ca-r5D" secondAttribute="bottom" id="gml-hj-HKV"/>
                             <constraint firstItem="Vy4-ls-s99" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="igF-aI-uch"/>
+                            <constraint firstItem="Fdh-5i-Hwc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="jOM-b4-cnl"/>
                             <constraint firstItem="dde-Ca-r5D" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="lfa-fs-2Hx"/>
+                            <constraint firstItem="zks-Ja-Ugk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="76" id="ugY-F2-KGx"/>
+                            <constraint firstItem="zks-Ja-Ugk" firstAttribute="top" secondItem="cJV-q1-Qs6" secondAttribute="bottom" constant="108.67" id="vSm-WC-zLv"/>
                             <constraint firstItem="gjR-gT-wa4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="26" id="wjx-rV-UCR"/>
                             <constraint firstItem="cJV-q1-Qs6" firstAttribute="top" secondItem="gjR-gT-wa4" secondAttribute="bottom" constant="36" id="xCp-VZ-sEy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zks-Ja-Ugk" secondAttribute="trailing" constant="77" id="xnv-9i-yYV"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="cityNameLbl" destination="Vy4-ls-s99" id="gRC-Mh-uwU"/>
                         <outlet property="cityNameTextField" destination="oCM-cV-zcb" id="Uiq-dU-eEC"/>
+                        <outlet property="descriptionOfWeather" destination="Fdh-5i-Hwc" id="Zty-s5-niO"/>
                         <outlet property="loader" destination="JZd-PI-HIk" id="eNk-9e-io8"/>
                         <outlet property="searchBtn" destination="0jh-xJ-8YS" id="p4d-cs-xzv"/>
                         <outlet property="temperatureLbl" destination="cJV-q1-Qs6" id="7OJ-0p-Ugo"/>
+                        <outlet property="weatherIcon" destination="zks-Ja-Ugk" id="A4d-oM-ab9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -107,7 +131,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bgImg" width="3648" height="5472"/>
+        <image name="bgImg" width="1280" height="1920"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

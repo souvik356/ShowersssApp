@@ -20,7 +20,7 @@ struct DataManager {
                 do{
                     let weatherData = try JSONDecoder().decode(WeatherResponse.self, from: data)
                     if let firstWeatherData = weatherData.data.first{
-                        print(firstWeatherData.city_name,firstWeatherData.temp)
+                        print(firstWeatherData.cityName,firstWeatherData.temp)
                     }
                     completion(weatherData)
                 }catch{
